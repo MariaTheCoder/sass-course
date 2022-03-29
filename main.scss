@@ -23,5 +23,14 @@ $font-weights: (
 body {
   background-color: $primary-color;
   color: $text-color;
-  font-weight: map-get($font-weights, regular);
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+
+  // with sass nesting is written differently than in pure css
+  p {
+    font-weight: map-get($font-weights, regular);
+  }
 }
