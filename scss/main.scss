@@ -38,13 +38,18 @@ body {
 
   // with sass nesting is written differently than in pure css
   // #{&}__paragraph is the sass shortcut of .main .main__paragraph in css
-  #{&}__paragraph {
+  #{&}__paragraph1 {
     font-weight: weight(regular);
 
     &:hover {
       color: #ff652f;
       font-style: italic;
     }
+  }
+
+  #{&}__paragraph2 {
+    @extend .main__paragraph1;
+    color: $accent-color;
   }
 
   @include mobile {
