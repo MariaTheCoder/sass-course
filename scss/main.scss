@@ -1,17 +1,18 @@
 @import "./resets";
 @import "./variables";
 
-// How to use variables in css
-// :root {
-//   --primary-color: #272727;
-//   --accent-color: #ff652f;
-//   --text-color: #fff;
-// }
-// body {
-//   background-color: var(--primary-color);
-// }
-// How to use variables in sass
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
+  @include flexCenter;
   background-color: $primary-color;
   color: $text-color;
 }
@@ -23,7 +24,7 @@ body {
   // with sass nesting is written differently than in pure css
   // #{&}__paragraph is the sass shortcut of .main .main__paragraph in css
   #{&}__paragraph {
-    font-weight: map-get($font-weights, regular);
+    font-weight: weight(regular);
   }
 
   &:hover {
