@@ -36,4 +36,9 @@ body {
   color: #ff652f;
   font-style: italic;
 }
+
+.light {
+  background-color: white;
+  color: black;
+}
 /*# sourceMappingURL=main.css.map */
