@@ -1,25 +1,16 @@
+@import "./resets";
+@import "./variables";
+
 // How to use variables in css
 // :root {
 //   --primary-color: #272727;
 //   --accent-color: #ff652f;
 //   --text-color: #fff;
 // }
-
 // body {
 //   background-color: var(--primary-color);
 // }
-
 // How to use variables in sass
-$primary-color: #272727;
-$accent-color: #ff652f;
-$text-color: #fff;
-// how to use maps in css (comparable to arrays in JavaScript)
-$font-weights: (
-  "regular": 400,
-  "medium": 500,
-  "bold": 700,
-);
-
 body {
   background-color: $primary-color;
   color: $text-color;
