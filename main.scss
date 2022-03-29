@@ -30,7 +30,8 @@ body {
   margin: 0 auto;
 
   // with sass nesting is written differently than in pure css
-  p {
+  // #{&}__paragraph is the sass shortcut of .main .main__paragraph in css
+  #{&}__paragraph {
     font-weight: map-get($font-weights, regular);
   }
 }
