@@ -34,4 +34,8 @@ body {
   #{&}__paragraph {
     font-weight: map-get($font-weights, regular);
   }
+
+  &:hover {
+    color: #ff652f;
+  }
 }

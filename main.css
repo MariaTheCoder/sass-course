@@ -11,4 +11,8 @@ body {
 .main .main__paragraph {
   font-weight: 400;
 }
+
+.main:hover {
+  color: #ff652f;
+}
 /*# sourceMappingURL=main.css.map */
